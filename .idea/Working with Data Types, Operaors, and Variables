@@ -1,0 +1,8 @@
+var a = 1;
+var b = a++;
+var c = ++a;
+// what is the value of a, b, and c?
+a = 1
+b = 2
+c = 2
+
