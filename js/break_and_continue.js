@@ -4,7 +4,7 @@
 //continue after the user number
 //input cannot be even,less than 1, greater than 50, or not a number
 "use strict"
-
+/*
 var randomNumber
 while (true) {
     var input = prompt("Please give me an odd integer between 1 and 50");
@@ -14,7 +14,6 @@ while (true) {
     }
 }
 
-/*
 console.log('the number to skip is ' + randomNumber)
 
 for (i=0;i<50;i++){
