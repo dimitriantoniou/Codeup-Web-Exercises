@@ -4,7 +4,7 @@
 //continue after the user number
 //input cannot be even,less than 1, greater than 50, or not a number
 "use strict"
-/*
+
 var randomNumber
 while (true) {
     var input = prompt("Please give me an odd integer between 1 and 50");
@@ -14,11 +14,16 @@ while (true) {
     }
 }
 
-console.log('the number to skip is ' + randomNumber)
+console.log('The number to skip is ' + randomNumber)
 
-for (i=0;i<50;i++){
-    if (randomNumber===i){
-        console.log("Here is an odd number: " + i);
+//can't figure out how to get the yikes message to display
+
+for (i=1;i<50;i+=2) {
+    if (i == randomNumber) {
+        console.log('Yikes! Skipping number: ' + i);
+        continue;
+    }else {
+        console.log('Here is an odd number: ' + i);
     }
 }
 
