@@ -1,7 +1,8 @@
-// Exercise 2
+// Exercise 2 complete
 // the 1st output should be x*1, the 2nd should be x*2, etc...
 // as long as the multiplier is less than or equal to 10, this loop should execute
 // the number input should be constant, while the multiplier increases by 1 starting at 1
+
 "use strict"
 function showMultiplicationTable(x) {
     for (var i = 1; i <= 10; i++) {
@@ -9,7 +10,7 @@ function showMultiplicationTable(x) {
     }
 }
 
-//Exercise 3
+//Exercise 3 complete
 //Use a for loop and the code from the previous lessons to generate 10 random numbers between 20 and 200 and output to the console whether each number is odd or even.
 
 for (var i=0; i<10;i++){
@@ -21,7 +22,7 @@ for (var i=0; i<10;i++){
     }
 }
 
-//exercise 4
+//exercise 4 complete
 //output starts with 1 digit and increments
 //output starts at 1 and increments
 //output stops at nine nines
