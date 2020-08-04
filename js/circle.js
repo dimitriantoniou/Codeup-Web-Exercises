@@ -1,6 +1,6 @@
 (function() {
     "use strict";
-//completed
+//completed!
     // create a circle object
     var circle = {
         radius: 3,
