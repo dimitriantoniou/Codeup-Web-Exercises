@@ -11,10 +11,17 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-var person = {}
-    person.firstName = 'Dimitri';
-    person.firstName = 'Antoniou';
+var person = {
+        firstName: "Dimitri",
+        lastName: "Antoniou",
+        sayHello: function() {
+            return("Hello ${this.firstName} ${this.lastName}!);
+        }
+    };
 
+console.log(typeof person);
+console.log(person[0]);
+console.log(person[1]);
 
     /**
      * TODO:
@@ -25,12 +32,6 @@ var person = {}
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-    var person = {}
-    person.firstName = 'Dimitri';
-    person.firstName = 'Antoniou';
-    person.hello = function(){
-        return('Hello from ' + firstName + ' ' + lastName);
-};
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -46,11 +47,15 @@ var person = {}
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+         {name: 'Cameron', amount: 180},
+         {name: 'Ryan', amount: 250},
+         {name: 'George', amount: 320}
+     ];
+
+
+    //console.log(With a subtotal of [amount], [name] gets a discount of [discount] and owes [total])
+    //
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -64,7 +69,18 @@ var person = {}
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-
+var books = [
+        {title: "Pastwatch", author: {
+                firstName: "Orson", lastName: "Scott Card"}},
+        {title: "Harry Potter", author:{
+                firstName: "JK",lastName: "Rowling"}},
+        {title: "The Hobbit", author: {
+                firstName: "JRR", lastName:"Tolkein"}},
+        {title: "iRobot",author:{
+            firstName: "Isaac",lastName: "Asimov"}},
+        {title: "The Time Machine",author:{
+                firstName:"HG",lastName:"Wells"}},
+    ]
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -89,6 +105,9 @@ var person = {}
      *      ---
      *      ...
      */
+    for (var i = 0; i < 3; i++) {
+        console.log('Book #'${indexOf(i)+1}' + '' );
+    }
 
     /**
      * Bonus:
