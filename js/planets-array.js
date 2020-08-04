@@ -1,6 +1,6 @@
 (function(){
     "use strict";
-
+//completed
     var planets = [
         'Mercury',
         'Venus',
