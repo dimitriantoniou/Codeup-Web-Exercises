@@ -1,4 +1,6 @@
 "use strict"
+//completed
+
 alert ("Welcome to my Website!")
 //var userInput = prompt("What's your favorite color?");
 //console.log(userInput+ 'is my favorite color too!');

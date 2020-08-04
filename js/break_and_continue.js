@@ -4,6 +4,7 @@
 //continue after the user number
 //input cannot be even,less than 1, greater than 50, or not a number
 "use strict"
+//completed
 
 var randomNumber
 while (true) {

@@ -1,4 +1,5 @@
 "use strict"
+//completed
 
 //while loop starts at 2 ends at 65536
 //*2
