@@ -1,6 +1,6 @@
 (function(){
     "use strict";
-
+//completed - bonus in progress
     var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
     //var planetsArray;
     /**
@@ -25,5 +25,6 @@
     var newString = "Mercury<br>Venus<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranu<br>Neptune";
 console.log(newString);
 
-    var stringList = <ul>"<li>Mercury</li><li>Venus</li><li>Earth</li><li>Mars</li><li>Jupiter</li><li>Saturn</li><li>Uranus</li><li>Neptune</li>"</ul>;
+//bonus in progress
+//    var stringList = <ul> <li>"Mercury</li><li>Venus</li><li>Earth</li><li>Mars</li><li>Jupiter</li><li>Saturn</li><li>Uranus</li><li>Neptune</li> </ul>;
 })();
