@@ -14,14 +14,10 @@
 var person = {
         firstName: "Dimitri",
         lastName: "Antoniou",
-        sayHello: function() {
-            return("Hello ${this.firstName} ${this.lastName}!);
-        }
-    };
-
+    }
 console.log(typeof person);
-console.log(person[0]);
-console.log(person[1]);
+console.log(person.firstName);
+console.log(person.lastName);
 
     /**
      * TODO:
@@ -32,6 +28,10 @@ console.log(person[1]);
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
+
+    person.sayHello = function (){
+            return "Hello from " + person.firstName + " " +person.lastName + "!";
+    }
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -70,16 +70,36 @@ console.log(person[1]);
      * > console.log(books[0].author.lastName) // "Adams"
      */
 var books = [
-        {title: "Pastwatch", author: {
-                firstName: "Orson", lastName: "Scott Card"}},
-        {title: "Harry Potter", author:{
-                firstName: "JK",lastName: "Rowling"}},
-        {title: "The Hobbit", author: {
-                firstName: "JRR", lastName:"Tolkein"}},
-        {title: "iRobot",author:{
-            firstName: "Isaac",lastName: "Asimov"}},
-        {title: "The Time Machine",author:{
-                firstName:"HG",lastName:"Wells"}},
+        {title: "Pastwatch",
+        author: {
+            firstName: "Orson",
+            lastName: "Scott Card"
+           }
+        },
+        {title: "Harry Potter",
+        author:{
+            firstName: "JK",
+            lastName: "Rowling"
+            }
+        },
+        {title: "The Hobbit",
+        author: {
+            firstName: "JRR",
+            lastName:"Tolkein"
+            }
+        },
+        {title: "iRobot",
+        author:{
+            firstName: "Isaac",
+            lastName: "Asimov"
+            }
+        },
+        {title: "The Time Machine",
+        author:{
+            firstName:"HG",
+            lastName:"Wells"
+            }
+        },
     ]
     /**
      * TODO:
@@ -105,9 +125,13 @@ var books = [
      *      ---
      *      ...
      */
-    for (var i = 0; i < 3; i++) {
-        console.log('Book #'${indexOf(i)+1}' + '' );
-    }
+
+books.forEach(function(book){
+    console.log('Book # ' + (books.indexOf(book)+1));
+    console.log('Title: ' + book.title);
+    console.log('Author: ' + book.author.firstName + ' ' + book.author.lastName);
+    })
+
 
     /**
      * Bonus:
@@ -119,5 +143,14 @@ var books = [
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+    function createBook (titleName, authorName){
+        var book = {
+            title: titleName,
+            author: authorName
+        };
+        return book;
+        console.log(book.title + 'was written by ' + book.author)
+    }
 
 })();
