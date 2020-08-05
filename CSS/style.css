@@ -1,4 +1,47 @@
 .fancy-header {
     color: purple;
     text-decoration: underline;
+    text-align: center; }
+}
+
+body {
+    background-color: #ccffdd;
+    font-family: Algerian;
+}
+
+header {
+    background-image: url("https://www.shutterstock.com/image-vector/abstract-black-red-tech-wavy-banner-758336155");
+    background-position: center;
+    background-size: auto;
+}
+
+list{
+    font-style: italic;
+    color: firebrick;
+}
+
+table {
+    color: lawngreen;
+    padding: 10px;
+    border-spacing: 10px;
+}
+
+table td, table th{
+    padding: 10px;
+}
+
+a:link {
+    color:red;
+}
+
+a:visited {
+    color:black;
+}
+
+a:hover {
+    color:blue;
+}
+
+a:active {
+    color:green;
 }
