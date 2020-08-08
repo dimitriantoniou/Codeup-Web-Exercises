@@ -50,6 +50,12 @@ a {
 }
 .profile {
     background: var(--light-bg);
+    height: 80px;
+
+}
+.profile-image{
+    position: absolute;
+    top: 10px;
 }
 .btn {
     border: 1px solid var(--main-link-color);
