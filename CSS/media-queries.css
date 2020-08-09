@@ -1,0 +1,58 @@
+*{
+    boz-sizing: border-box;
+}
+
+/*Build for native*/
+/*
+completed:
+- header should be centered
+- home, about, work, and content should sit in grey boxes
+- 'skip to main content' should sit in a light blue box
+- skip to main content should be centered
+- sub-section p text is italicized
+- nav.links should be centered
+
+to do:
+- main text should span the full width
+- nav.links should take full width
+- header-img needs to be 339x224
+ */
+
+.alert-info{
+    text-align: center;
+    padding: 1em;
+    background-color: #CBFCFD;
+    border: 1px solid #1A1A1A;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+}
+.main{
+    width: 100%;
+}
+.nav-links{
+    list-style: none;
+    text-decoration-color: #1969B2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-img{
+    display: flex;
+    justify-content: center;
+    width:339px;
+    height: 224px;
+}
+.header0mg img{
+    max-height: 80%;
+    width: 80%;
+}
+.sub-section{
+    font-style: italic;
+}
+
+
+/* Large device build (desktops, 992px and up) */
+@media screen and (min-width:992px) { /* ... */ }
