@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script src="jquery-2.2.4.js"></script>
+<script>
+    "use strict";
+    var konami = "3838404037393739666513";
+    // up up dn dn lft rght lft rght b a enter
+
+    if (konami){
+        alert('You have added 30 lives!');
+    }
+    $(document).keyup(function(event){
+        console.log(event.keyCode);
+    });
+</script>
+</body>
+</html>
