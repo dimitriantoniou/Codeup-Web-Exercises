@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+
+<h1 id="codeup">Hello Codeup</h1>
+<h2 id = 'importnat'>National Parks</h2>
+<dl>
+    <dt>Big Bend</dt>
+    <dd>Borders Mexico</dd>
+    <dt>Acadia National Park</dt>
+    <dd>Located in Maine</dd>
+    <dt>Yellowstone</dt>
+    <dd>Stone is yellow here</dd>
+</dl>
+
+<button id="parkstyletime">Style us ^</button>
+<script src="jquery-2.2.4.js"></script>
+
+<script>
+   $(document).ready(function () {
+       $("dd").addClass("invisible");
+
+       $("#styletime").click(function () {
+           $("dd").toggleClass("invisible");
+       })
+   });
+
+   $('dt').click(function() {
+       $(this).css('background-color', '#FF0');
+   });
+
+</script>
+
+</body>
+</html>
