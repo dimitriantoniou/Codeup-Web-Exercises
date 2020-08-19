@@ -36,6 +36,7 @@ h2, h3 {
     /* enter needed declarations here */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 section { /* need to move green box left*/
@@ -55,7 +56,6 @@ section:nth-of-type(1) {
 }
 section:nth-of-type(1) div:last-child {
     /* enter needed declarations here */
-    text-align: flex-start;
     align-self: flex-start;
 }
 
@@ -88,13 +88,13 @@ section:nth-of-type(1) div:last-child {
 section:nth-of-type(3) {
     /* enter needed declarations here */
     display: flex;
-    justify-content: space-evenly;
-    align-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 section:nth-of-type(3) h3 { /*need to move h3 to the left*/
     /* enter needed declarations here */
-    flex-grow: 1;
+    flex-grow: 2;
     align-self: center;
 }
 
@@ -111,6 +111,7 @@ section:nth-of-type(3) h3 { /*need to move h3 to the left*/
     width: 5em;
     background: brown;
     /* enter needed declarations here */
+    flex-grow: 1;
 }
 
 .large-brown-box:nth-of-type(2) {
