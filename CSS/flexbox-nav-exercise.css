@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0em;
+    padding: 0em;
+}
 .container{
     display:flex;
     justify-content:space-between;
@@ -8,11 +15,40 @@ ul{
     list-style: none;
     display: flex;
     padding: 20px;
-
+}
+.h1{
+    font-size: 2em;
+    padding: 1em 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.nav-item{
+    padding: 10px;
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
 }
 .nav-left{
+    display:flex;
+}
+.nav-link{
+    padding: 10px;
+    display:flex;
+    font-weight: bolder;
 }
 
 .nav-right{
-
+    display: flex;
+    align-items: center;
 }
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+/*h1 is not vertically centered*/
