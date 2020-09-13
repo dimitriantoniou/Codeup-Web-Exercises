@@ -27,19 +27,19 @@
 function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
-
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
-    var storeget = $.get("data/inventory.json");
-    storeget.done(function(data) {
-        $.each(data, function (index, item) {
+    let storeGet = $.get("data/inventory.json");//get request to pull data from json; store in variable storeGet
+    storeGet.done(function(data) { //when the request is done, pass the data from storeGet into the function
+        $.each(data, function (index, item) {//for each data, pass the index and item through the function
             $("#insertProducts").append("<tr>><td>" + item.title + "</td>" + "<td>" + item.quantity + "</td>" + "<td>" + item.price + "</td>" + "<td>" + item.categories + "</td></tr>");
-        })
+        })//append a row
     })
     ("button").click(function(){
         $("html").load("ajax-store.html");
+        //click to load
     });
 
 };
@@ -56,4 +56,16 @@ Your online tool store should load data from the JSON file using a get request a
 Add some new entries to inventory.json and see how the data on the page gets updated.
 Add a "Refresh" button that will load inventory.json for you without having to refresh the entire page.
 Add Twitter Bootstrap to your online store with some custom CSS to make the style your own.
+
+Simple get
+    $.ajax("/some-url")
+
+Post
+    $.ajax("/some-url", {
+        type: "POST",
+        data: {
+            name:     "John",
+            location: "Boston"
+        }
+    });
 -->
