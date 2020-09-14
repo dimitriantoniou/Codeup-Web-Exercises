@@ -2,10 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Ajax Blog</title>
 </head>
 <body>
+<h1>My blog</h1>
+<div id="posts">
+    <table id="blogPosts">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Categories</th>
+            <th>Date</th>
+        </tr>
+        </thead>
+        <tbody id="insertProducts"></tbody>
+    </table>
+    <br>
+    <button>Click here to refresh</button>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
+<script>
+    (function() {
+        "use strict";
+
+        let blogGet = $.get("data/blog.json");
+
+        blogGet.done(function(data) {
+            $.each(data, function (index, item) {
+                $("#posts").append(
+                    "<tr><td>" + item.title + "</td>" + "<td>" + item.content + "</td>" +
+                    "<td>" + item.categories + "</td>" + "<td>" + item.date + "</td></tr>");
+            })
+        });
+
+        $("button").click(function() {//event listener, when the button is clicked, call the function
+            $("html").load("ajax-blog.html");//re-load the page
+        });
+
+    })();
+</script>
 </body>
 </html>
 
