@@ -19,30 +19,41 @@
     <tbody id="insertProducts"></tbody>
 </table>
 
-<button>this is a button for refreshing :)</button>
+<button id="updateList">this is a button for refreshing :)</button>
+
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script>
-function() {
+    (function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
-    let storeGet = $.get("data/inventory.json");//get request to pull data from json; store in variable storeGet
-    storeGet.done(function(data) { //when the request is done, pass the data from storeGet into the function
-        $.each(data, function (index, item) {//for each data, pass the index and item through the function
-            $("#insertProducts").append("<tr>><td>" + item.title + "</td>" + "<td>" + item.quantity + "</td>" + "<td>" + item.price + "</td>" + "<td>" + item.categories + "</td></tr>");
-        })//append a row
-    })
-    ("button").click(function(){
-        $("html").load("ajax-store.html");
-        //click to load
+
+    //event listener for mouse click on the refresh button
+    //when the button is clicked, execute the function taht:
+    //returns data from json file
+    //appends data to the table #insertProducts
+
+    let storeGet = $.get("data/inventory.json");//asks for the file inventory.json and sets data equal to storeGet
+
+    storeGet.done(function(data) {//when the get request is done, callback function on the returned data
+        $.each(data, function (index, item) {//jquery iterates over the data
+            $("#insertProducts").append(//targets the table body with id insertProducts to append
+                "<tr><td>" + item.title + "</td>" + "<td>" + item.quantity + "</td>" +
+                "<td>" + item.price + "</td>" + "<td>" + item.categories + "</td></tr>");
+            //appends a row with cells of title quant, price, and categories
+        })
     });
 
-};
+    $("button").click(function() {//event listener, when the button is clicked, call the function
+        $("html").load("ajax-store.html");//re-load the page
+    });
+
+})();
 
 </script>
 
