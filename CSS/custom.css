@@ -5,3 +5,6 @@
 h1{
     text-align: center;
 }
+.pull-right{
+    float:right;
+}

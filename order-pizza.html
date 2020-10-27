@@ -49,15 +49,123 @@
     <h2>Build your own pizza!</h2>
     <ul class="nav nav-tabs">
     <li class="nav-item">
-        <a class="nav-link" href="#"><span class="badge">1</span>Size and Crust</a>
+        <a class="nav-link active"><span class="badge">1</span>Size and Crust</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#"><span class="badge">2</span>Cheese and Sauce</a>
+        <a class="nav-link"><span class="badge">2</span>Cheese and Sauce</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#"><span class="badge">3</span>Toppings</a>
+        <a class="nav-link"><span class="badge">3</span>Toppings</a>
     </li>
 </ul>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Select size and crust</h5>
+            <div class="card">
+                <div class="card-body">
+                    <p>Hand Tossed</p>
+                    <p>Garlic seasoned crust with a rich,buttery taste.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item"><input type="radio"id="size-small"><label for="size-small">Small(10")</label></li>
+                        <li class="list-group-item"><input type="radio"id="size-medium"><label for="size-medium">Medium(12")</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p>Crispy Thin</p>
+                    <p>Thin enough for optimum crispy to crunch ratio.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item"><input type="radio"id="size-medium2"><label for="size-medium2">Medium(12")</label></li>
+                        <li class="list-group-item"><input type="radio"id="size-large"><label for="size-large">Large(14")</label></li>
+                    </ul>
+                </div>
+            </div>
+            <a class="btn pull-right btn-primary">Next Step</a>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Choose Cheese and Sauce</h5>
+            <div class="card">
+                <div class="card-body">
+                    <p>Cheese</p>
+                    <p>How Much?</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="cheeseDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item">Light</a>
+                            <a class="dropdown-item">Normal</a>
+                            <a class="dropdown-item">Extra</a>
+                            <a class="dropdown-item">Double</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p>Sauce</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="SauceDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item">Tomato sauce</a>
+                        <a class="dropdown-item">Marinara sauce</a>
+                        <a class="dropdown-item">BBQ sauce</a>
+                        <a class="dropdown-item">Alfredo sauce</a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn pull-right btn-primary">Previous Step</a>
+            <a class="btn pull-right btn-primary">Next Step</a>
+
+        </div>
+            <div class="card-body">
+                <h5 class="card-title">Choose Toppings</h5>
+                <div class="card">
+                    <div class="card-body">
+                        <p>Choose Meats</p>
+                        <div>
+                            <input type="checkbox" id="beef" name="beef">
+                            <label for="beef">Beef</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="ham" name="ham">
+                            <label for="ham">Ham</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="philly-steak" name="philly-steak">
+                            <label for="philly-steak">Philly Steak</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="bacon" name="bacon">
+                            <label for="bacon">Bacon</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p>Choose Non-Meats</p>
+                        <div>
+                            <input type="checkbox" id="green-peppers" name="green-peppers">
+                            <label for="green-peppers">Green Peppers</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mushrooms" name="mushrooms">
+                            <label for="mushrooms">Mushrooms</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="onions" name="onions">
+                            <label for="onions">Onions</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="jalapeno-peppers" name="jalapeno-peppers">
+                            <label for="jalapeno-peppers">Jalapeño Peppers</label>
+                        </div>
+                    <a class="btn pull-right btn-primary">Checkout</a>
+                </div>
+    </div>
 </container>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
