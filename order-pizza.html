@@ -30,19 +30,14 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search stores near you!</button>
         </form>
-        <ul>
             <i class="fa fa-user"></i>
-            <li class="nav-item">
                 <a class = nav-link" href="#">Sign Up</a>
-            </li>
-
-        </ul>
     </div>
 </nav>
 <!-- Main page content -->
 <container>
     <!--Jumbotron-->
-    <div id="pizzaimg" class="jumbotron">
+    <div id="pizzaimg" class="jumbotron p-0 w-auto h-auto">
         <img src="img/pizza_jumbotron.png" class="img-fluid">
         <h1 class="centeringtime" >Welcome to Pizza World!</h1>
     </div>
@@ -59,7 +54,7 @@
         <a class="nav-link"><span class="badge">3</span>Toppings</a>
     </li>
 </ul>
-    <div class="card" style="width: 18rem;">
+    <div class="card w-100" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title">Select size and crust</h5>
             <div class="card">
@@ -82,7 +77,7 @@
                     </ul>
                 </div>
             </div>
-            <a class="btn pull-right btn-primary">Next Step</a>
+            <button class="btn pull-right btn-primary">Next Step</button>
         </div>
         <div class="card-body">
             <h5 class="card-title">Choose Cheese and Sauce</h5>
@@ -118,9 +113,10 @@
                     </div>
                 </div>
             </div>
-            <a class="btn pull-right btn-primary">Previous Step</a>
-            <a class="btn pull-right btn-primary">Next Step</a>
-
+                <div class="btn-group ml-auto text-right" role="group">
+                    <button type="button class=" class="btn btn-primary">Previous Step</button>
+                    <button type="button class=" class="btn btn-primary">Next Step</button>
+                </div>
         </div>
             <div class="card-body">
                 <h5 class="card-title">Choose Toppings</h5>
@@ -164,7 +160,7 @@
                             <input type="checkbox" id="jalapeno-peppers" name="jalapeno-peppers">
                             <label for="jalapeno-peppers">Jalapeño Peppers</label>
                         </div>
-                    <a class="btn pull-right btn-primary">Checkout<i class="fas fa-shopping-cart"></i></a>
+                    <button class="btn pull-right btn-primary">Checkout<i class="fas fa-shopping-cart"></i></button>
                 </div>
     </div>
 </container>
